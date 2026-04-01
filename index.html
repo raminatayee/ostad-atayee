@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> شعبه مرکزی | ارتباط با ما</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+<style>
+@font-face {
+  font-family: 'Atayee';
+  src: url('font/BTITRBD.woff'),
+  url('font/BTITRBD.woff')
+}
+body{
+margin:0;
+font-family:sans-serif;
+/*background:linear-gradient(#0f2027,#203a43,#2c5364);*/
+background-image:url(simon-lee-zft-W1kVEhg-unsplash.jpg);
+background-repeat: round;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+direction:rtl;
+}
+
+.container {
+background: rgba(255, 255, 255, 0.01);
+padding:40px;
+border-radius:25px;
+border: solid 0.1px #fff;
+backdrop-filter:blur(10px);
+width:300px;
+box-shadow: 0 8px 32px rgba(0,0,0,0.9);
+}
+
+.logo{
+width:280px;
+height: 100px;
+margin-bottom:10px;
+}
+h1{
+  font-size: 18px;
+  font-family: Atayee;
+  
+}
+
+.button{
+display:flex;
+height: 30px;
+justify-content:center;
+align-items:center;
+margin-top:15px;
+padding:12px;
+border-radius:12px;
+background:rgba(255,255,255,0.2);
+text-decoration:none;
+color:white;
+transition:0.3s;
+border: solid 1px rgba(255,255,255,0.3);
+}
+
+.button:hover{
+background:rgba(255,255,255,0.4);
+}
+
+/* .button span{
+flex:1;
+text-align:left;
+padding-right:10px;
+} */
+
+/* لوتی */
+#telegram{
+width:50px;
+height:50px;
+margin-left: 8px;
+}
+#insta{
+width:35px;
+height:35px;
+margin-left: 18px;
+}
+#facebook{
+width:35px;
+height:35px;
+padding-right: 30px;
+margin-left: 13px;
+}
+/* hover animation */
+.button:hover{
+transform:translateY(-2px);
+}
+.button .span1{
+ margin-left: 40px;
+}
+#phone{
+  width: 40px;
+  height: 40px;
+ padding-right: 5px;
+margin-left: 13px;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo">
+
+<h1>مرکز آموزشی استاد عطایی شعبه مرکزی</h1>
+
+<p>برای ارتباط با ما از روش های زیر استفاده کنید.</p>
+
+<p>آدرس: هرات، چهارراهی مستوفیت</p>
+  <!-- <a class="phone" href="tel:0799262448">0799262448</a> -->
+<a class="button" href="tel:0799262448">
+  <div id="phone"></div>
+  <span class="span1">تماس</span>
+</a>
+<!-- Telegram -->
+<a class="button" href="https://t.me/AtayeeMostafiyat2448">
+  <div id="telegram"></div>
+<span class="span1">تلگرام</span>
+</a>
+
+<!-- Instagram -->
+<a class="button" href="
+https://instagram.com/ostad_atayee_learning_center?igshid=YmMyMTA2M2Y=">
+  <div id="insta"></div>
+<span class="span2">اینستاگرام</span>
+</a>
+
+<a class="button" href="https://www.facebook.com/AtayeeMostafiyat?mibextid=LQQJ4d">
+  <div id="facebook"></div>
+<span class="span1">فیسبوک</span>
+</a>
+</div>
+
+<script>
+
+
+/* تلگرام */
+lottie.loadAnimation({
+  container: document.getElementById('phone'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'phone.json'
+});
+/* تلگرام */
+lottie.loadAnimation({
+  container: document.getElementById('telegram'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'telegram.json'
+});
+
+/* اینستاگرام */
+lottie.loadAnimation({
+  container: document.getElementById('insta'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'instagram.json'
+});
+// فیسبوک
+lottie.loadAnimation({
+  container: document.getElementById('facebook'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'facebook.json'
+});
+
+</script>
+
+</body>
+</html>
